@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="docs/logo.png" width="170"/>
 
 # 🛡️ SentinelOS
 
