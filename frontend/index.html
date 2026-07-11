@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelOS - AI Security Gateway</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>SentinelOS</h1>
+                    <span class="badge">AI Security Gateway</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html" class="active">Chat</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="history.html">History</a>
+                    <a href="analytics.html">Analytics</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="chat-container">
+                <div class="chat-welcome">
+                    <div class="welcome-icon">🤖</div>
+                    <h2>Welcome to SentinelOS</h2>
+                    <p>Ask me anything about security, cloud, DevOps, or general knowledge</p>
+                    <p class="security-note">🛡️ Every request is analyzed by AI security agents</p>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <!-- Messages will appear here -->
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="promptInput" 
+                            placeholder="Type your request... (e.g., What is Kubernetes? Delete production database)"
+                            rows="1"
+                            onkeydown="handleKeyDown(event)"
+                        ></textarea>
+                        <button id="sendButton" onclick="sendPrompt()">
+                            <span class="send-icon">➤</span>
+                        </button>
+                    </div>
+                    <div class="input-tips">
+                        <span>💡 Try: "What is SQL injection?" or "How to secure AWS S3?"</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 SentinelOS - AI Security Operating System</p>
+        </footer>
+    </div>
+
+    <!-- Report Modal -->
+<div class="modal" id="reportModal">
+    <div class="modal-content modal-large">
+        <span class="modal-close" onclick="closeReportModal()">&times;</span>
+        <h3>🔍 Full Security Report</h3>
+        <div id="reportContent" class="report-content">
+            <!-- Report content will be inserted here -->
+        </div>
+    </div>
+</div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

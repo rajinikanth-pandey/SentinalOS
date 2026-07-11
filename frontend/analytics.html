@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelOS - Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>SentinelOS</h1>
+                    <span class="badge">Analytics</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Chat</a>
+                    <a href="dashboard.html">Dashboard</a>
+                    <a href="history.html">History</a>
+                    <a href="analytics.html" class="active">Analytics</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="analytics-container">
+                <h2>Analytics Dashboard</h2>
+                
+                <!-- Summary Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-value" id="totalEvents">0</div>
+                        <div class="stat-label">Total Events</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="blockRate">0%</div>
+                        <div class="stat-label">Block Rate</div>
+                    </div>
+                    <div class="stat-value" id="avgRiskScore">0</div>
+                    <div class="stat-label">Avg Risk Score</div>
+                </div>
+
+                <!-- Charts -->
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h4>Decision Distribution</h4>
+                        <canvas id="decisionChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h4>Daily Activity</h4>
+                        <canvas id="dailyChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="charts-grid">
+                    <div class="chart-card">
+                        <h4>Top Actions</h4>
+                        <canvas id="actionsChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h4>Environment Distribution</h4>
+                        <canvas id="environmentChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Trends -->
+                <div class="trends-section">
+                    <h3>Trends</h3>
+                    <div id="trendsContent" class="trends-content">
+                        Loading trends...
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 SentinelOS - AI Security Operating System</p>
+        </footer>
+    </div>
+
+    <script src="js/analytics.js"></script>
+</body>
+</html>

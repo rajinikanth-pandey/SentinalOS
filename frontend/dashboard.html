@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SentinelOS - Security Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🛡️</span>
+                    <h1>SentinelOS</h1>
+                    <span class="badge">Security Dashboard</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="index.html">Chat</a>
+                    <a href="dashboard.html" class="active">Dashboard</a>
+                    <a href="history.html">History</a>
+                    <a href="analytics.html">Analytics</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="dashboard-container">
+                <!-- Stats Overview -->
+                <div class="stats-grid" id="statsGrid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="totalRequests">0</span>
+                            <span class="stat-label">Total Requests</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">✅</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="allowedRequests">0</span>
+                            <span class="stat-label">Allowed</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🚫</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="blockedRequests">0</span>
+                            <span class="stat-label">Blocked</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚠️</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="reviewRequests">0</span>
+                            <span class="stat-label">Review</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="avgRisk">0</span>
+                            <span class="stat-label">Average Risk</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🔒</div>
+                        <div class="stat-info">
+                            <span class="stat-value" id="criticalEvents">0</span>
+                            <span class="stat-label">Critical Events</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Activity -->
+                <div class="recent-activity">
+                    <h3>Recent Activity</h3>
+                    <div class="activity-list" id="activityList">
+                        <div class="loading">Loading recent activity...</div>
+                    </div>
+                </div>
+
+                <!-- Security Report Detail -->
+                <div class="security-detail" id="securityDetail" style="display:none;">
+                    <h3>🔍 Security Analysis Detail</h3>
+                    <div class="detail-content" id="detailContent"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>© 2026 SentinelOS - AI Security Operating System</p>
+        </footer>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
