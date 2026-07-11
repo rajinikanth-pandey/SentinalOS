@@ -42,28 +42,56 @@ Unsafe or malicious prompts are automatically blocked before they can reach the 
 
 ---
 
-# 📸 Preview
-
-## AI Security Gateway
-
-<p align="center">
-
-<img src="docs/chat.png" width="95%">
-
-</p>
-
 ---
 
-## Security Dashboard & Analytics
+# ✨ Features
 
-<p align="center">
+SentinelOS provides an intelligent security gateway that analyzes every AI prompt before it reaches the language model.
 
-<img src="docs/security-dashboard.png" width="48%">
+- 🛡️ **Multi-Agent Security Analysis**
+  - Multiple AI agents independently inspect every request and reach a consensus decision.
 
-<img src="docs/analytics-dashboard.png" width="48%">
+- 🤖 **AI Security Gateway**
+  - Only safe prompts are forwarded to the Language Model. Malicious or high-risk requests are blocked automatically.
 
-</p>
+- ⚖️ **Rule Engine**
+  - Deterministic security rules detect dangerous operations such as destructive actions, production resource access, and critical system modifications.
 
+- 📊 **Security Dashboard**
+  - Monitor total requests, allowed requests, blocked requests, review requests, average risk score, and critical security events.
+
+- 📈 **Analytics**
+  - Visualize security trends, decision distribution, environment statistics, daily activity, and action frequency using interactive charts.
+
+- 📜 **Audit Logging**
+  - Every request is stored with:
+  - Prompt
+  - Decision
+  - Risk Score
+  - Confidence Score
+  - Agent Results
+  - Rule Engine Results
+  - Policy Analysis
+  - Complete Security Report
+
+- 🔍 **Detailed Security Reports**
+  - View complete analysis including:
+  - Multi-agent decisions
+  - Rule engine evaluation
+  - Risk assessment
+  - Recommendations
+  - Event metadata
+
+- 💾 **SQLite Database**
+  - Persistent storage for audit logs, analytics, history, and reporting.
+
+- ⚡ **FastAPI Backend**
+  - High-performance REST API powering the SentinelOS dashboard.
+
+- 🎨 **Modern Web Interface**
+  - Clean responsive interface with Chat, Dashboard, History, and Analytics pages.
+
+---
 ---
 
 # 🌍 Why SentinelOS?
