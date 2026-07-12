@@ -13,8 +13,6 @@
 
 <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
 
-<img src="https://img.shields.io/badge/Groq-LLM-F55036?style=for-the-badge"/>
-
 <img src="https://img.shields.io/badge/Multi--Agent-AI-7B61FF?style=for-the-badge"/>
 
 <img src="https://img.shields.io/badge/Rule%20Engine-Enabled-success?style=for-the-badge"/>
@@ -339,7 +337,7 @@ BLOCK
 
 ## 💬 Secure AI Assistant
 
-Safe requests are automatically forwarded to the Groq LLM.
+Safe requests are automatically forwarded to the mist api LLM.
 
 The user experiences a seamless conversation while SentinelOS silently performs security validation in the background.
 
@@ -432,7 +430,7 @@ Every interaction is securely stored with
 
        ▼                   ▼
 
- Block Prompt       Forward to Groq
+ Block Prompt       Forward to mist api
 
                             │
 
@@ -483,7 +481,7 @@ ALLOW
 
 ↓
 
-Prompt is forwarded to Groq.
+Prompt is forwarded to mist api.
 
 ↓
 
@@ -637,10 +635,10 @@ inside
 backend/app
 ```
 
-Add your Groq API key.
+Add your mist  API key.
 
 ```env
-GROQ_API_KEY=your_groq_api_key
+mist _API_KEY=your_mist _api_key
 
 MODEL_NAME=llama-3.3-70b-versatile
 ```
@@ -878,7 +876,7 @@ This architecture enables SentinelOS to proactively identify malicious, destruct
 
  Return Security      Forward Prompt
 
-     Report            to Groq LLM
+     Report            to  LLM
 
                           │
 
@@ -1107,7 +1105,7 @@ The final response also includes:
 
 If the Consensus Engine determines that the prompt is safe,
 
-SentinelOS forwards the request to the Groq LLM.
+SentinelOS forwards the request to the  LLM.
 
 ```
 Prompt
@@ -1122,7 +1120,7 @@ ALLOW
 
 ↓
 
-Groq LLM
+mist  LLM
 
 ↓
 
