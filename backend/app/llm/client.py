@@ -4,7 +4,7 @@ from config import settings
 class Client:
 
     def __init__(self):
-        self.client = Groq(api_key=settings.GROQ_API_KEY)
+        self.client = Groq(api_key=settings.MIST_API_KEY)
         self.model = settings.MODEL_NAME
 
     def chat(self, system_prompt: str, user_prompt: str):
